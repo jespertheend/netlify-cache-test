@@ -1,5 +1,4 @@
 {
-  "name": "solid-quickstart",
   "scripts": {
     "dev": "npx netlify dev"
   },
