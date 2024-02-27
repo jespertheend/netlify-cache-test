@@ -11,5 +11,9 @@ export default async function handler(e: Request) {
   await new Promise<void>(r => {
     setTimeout(r, t);
   })
-  return new Response("hello this is a function")
+  return new Response("hello this is a function", {
+    headers: {
+      "Cache-Control": "max-age=180, public"
+    }
+  })
 }
