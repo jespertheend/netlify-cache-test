@@ -13,7 +13,8 @@ export default async function handler(e: Request) {
   })
   return new Response("hello this is a function", {
     headers: {
-      "Cache-Control": "max-age=18000"
+      "Netlify-CDN-Cache-Control": "public, s-maxage=31536000, must-revalidate",
+      "Cache-Control": "public, max-age=0, must-revalidate"
     }
   })
 }
