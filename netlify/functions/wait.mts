@@ -13,7 +13,7 @@ export default async function handler(e: Request) {
   })
   return new Response("hello this is a function", {
     headers: {
-      "Cache-Control": "max-age=180, public"
+      "Cache-Control": "max-age=18000"
     }
   })
 }
