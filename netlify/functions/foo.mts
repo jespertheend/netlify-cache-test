@@ -2,7 +2,7 @@ import type { Config, HandlerEvent } from "@netlify/functions";
 
 export const config: Config = {
   method: "GET",
-  path: ["/"],
+  path: ["/foo"],
 };
 
 export default async function handler(e: HandlerEvent) {
